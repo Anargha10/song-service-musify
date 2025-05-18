@@ -25,6 +25,9 @@ app.use(express.json());
 
 app.use('/api/v1', songRoutes)
 
+app.get("/", (req, res) => {
+    res.send("Welcome to the Song Service!");
+});
 app.listen(PORT, async () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
