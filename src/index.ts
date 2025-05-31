@@ -22,7 +22,7 @@ app.use(cors({
     origin: 'https://www.imanargha.shop', // Or specify '' if needed
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,
+    
 
 }));
 
